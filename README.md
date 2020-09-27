@@ -51,13 +51,13 @@ This way, to make it work inside Docker container we must pass two or three vari
   ENV="$ENV" npm run test:"${DOMAIN}"
 ```
 ```
-  ENV="$ENV" npm run test:"${DOMAIN}" -- -g "$GREP"
+  ENV="$ENV" npm run test:"${DOMAIN}" -- -g "$EXPRESSION"
 ```
 
 which can be done like this:
 
 ```
-  docker run -e ENV="staging" -e DOMAIN="foo" -e GREP="@smoke" mocha-with-docker:latest 
+  docker run -e ENV="staging" -e DOMAIN="foo" -e EXPRESSION="@smoke" mocha-with-docker:latest 
 ```
 
 To build an image, execute:

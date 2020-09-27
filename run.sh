@@ -1,10 +1,10 @@
 #!/bin/bash
 # Only for Docker usage
 
-# Depending whether GREP variable is given or not 
-if ! [ "$GREP" ]
+# Depending whether EXPRESSION variable is given or not 
+if ! [ "$EXPRESSION" ]
   then
     ENV="$ENV" npm run test:"${DOMAIN}"
   else
-    ENV="$ENV" npm run test:"${DOMAIN}" -- -g "$GREP"
+    ENV="$ENV" npm run test:"${DOMAIN}" -- -g "$EXPRESSION"
 fi
