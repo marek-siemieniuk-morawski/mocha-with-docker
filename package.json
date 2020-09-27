@@ -1,17 +1,15 @@
 {
   "name": "mocha-with-docker",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Example how to marry Mocha with Docker in order to make end-to-end even greater",
   "scripts": {
     "test": "mocha ./tests/**/*.test.js",
     "test:e2e": "mocha ./tests/end-to-end/*.test.js",
     "test:bar": "mocha ./tests/bar/*.test.js",
     "test:foo": "mocha ./tests/foo/*.test.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Marek Siemieniuk-Morawski",
+  "license": "MIT",
   "dependencies": {
     "core-js": "^3.6.5",
     "mocha": "^8.1.3",
